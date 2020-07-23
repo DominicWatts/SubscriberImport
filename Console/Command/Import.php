@@ -122,6 +122,21 @@ class ImportSubscribers extends Command
      * @var \Magento\Customer\Api\Data\CustomerInterfaceFactory
      */
     protected $customerInterfaceFactory;
+    
+    /**
+     * @var \Magento\Framework\Filesystem
+     */
+    protected $filesystem;
+
+    /**
+     * @var \Symfony\Component\Console\Helper\ProgressBarFactory
+     */
+    protected $progressBarFactory;
+
+    /**
+     * @var \Magento\Framework\App\Config\ScopeConfigInterface
+     */
+    protected $_scopeConfig;
 
     /**
      * Undocumented function
